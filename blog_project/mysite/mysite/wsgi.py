@@ -9,10 +9,10 @@ https://docs.djangoproject.com/en/1.11/howto/deployment/wsgi/
 
 import os, sys
 # add the hellodjango project path into the sys.path
-sys.path.append('/home/ubuntu/skillds/company_blog_project/og_project/mysite')
+sys.path.append('/home/ubuntu/skillds/company_blog_project/blog_project/mysite')
 
 # add the virtualenv site-packages path to the sys.path
-sys.path.append('/home/ubuntu/skillds/myenv/Lib/site-packages')
+sys.path.append('/home/ubuntu/skillds/myenv/lib/python3.5/site-packages')
 
 
 

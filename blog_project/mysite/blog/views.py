@@ -18,6 +18,9 @@ class AboutaboutView(TemplateView):
 class BlogsView(TemplateView):
     template_name="blog.html"
 
+class the_perfect_resume(TemplateView):
+    template_name="blog/the_perfect_resume.html"
+
 class PostListView(ListView):
     model=Post
 

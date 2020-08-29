@@ -15,6 +15,9 @@ class AboutView(TemplateView):
 class AboutaboutView(TemplateView):
     template_name="about_2.html"
 
+class BlogsView(TemplateView):
+    template_name="blog.html"
+
 class PostListView(ListView):
     model=Post
 

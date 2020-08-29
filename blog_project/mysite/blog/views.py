@@ -10,7 +10,10 @@ from blog.models import Comment,Post
 # Create your views here.
 
 class AboutView(TemplateView):
-    template_name='about.html'
+    template_name="index.html"
+
+class AboutaboutView(TemplateView):
+    template_name="about_2.html"
 
 class PostListView(ListView):
     model=Post

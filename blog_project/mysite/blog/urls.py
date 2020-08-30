@@ -6,6 +6,7 @@ urlpatterns=[
     url(r'^about/$' , views.AboutaboutView.as_view(),name="aboutabout"),
     url(r'^blogs/$' , views.BlogsView.as_view(),name="blogsview"),
     url(r'^blogs/the_perfect_resume/$' , views.the_perfect_resume.as_view(),name="the_perfect_resume"),
+    url(r'^blogs/about_data_science/$' , views.about_data_science.as_view(),name="about_data_science"),
     url(r'^$' ,views.AboutView.as_view(),name="about"),
     url(r'^post/(?P<pk>\d+)/$',views.PostDetailView.as_view(),name="post_detail"),
     url(r'^post/new/$', views.CreatePostView.as_view(),name='post_new'),

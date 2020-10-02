@@ -1,16 +1,31 @@
+{% include '../base_main_app.html' %}
 <div class="header-scroll-trigger"></div>
-<div class="container header-container ">
+<div class="container header-container" style="width:100%!important">
    <div class="container-inner">
       <nav class="header">
-         <a aria-label="Skillds" class="logo" href="#" style="color: black;font-size: 28px;font-weight: 600;">Skillds</a>      
+         <a aria-label="Skillds" class="logo" href="#" style="text-decoration: none!important;color: black!important;font-size: 28px!important;font-weight: 600!important;">Skillds</a>      
          <a class="button light header-login" style="visibility:hidden;" href="../static/preview.Skillds.com/">Login</a>
          <a class="button header-signup" href="/about" data-show="signup">Subscribe</a><button class="hamburger" data-toggle=".header"><span class="hamburger-inner"></span><span class="visually-hidden">Toggle menu</span></button>
          <div class="menu">
-            <a class="home" data-toggle=".header" href="http://www.skillds.com">Home</a>
-            <a class='about' data-toggle='.header' href='/about'>About</a>
-            <a class='Blog active' data-toggle='.header' href='/blogs'>Blogs</a>
-            <a class='jobs' data-toggle='.header' href='about.html#hiring'  style="display: none;>Jobs<span class="jobs-count"></span></a>
+            <a class="home" style= "text-decoration: none!important;" data-toggle=".header" href="http://www.skillds.com">Home</a>
+            <a class='about' style= "text-decoration: none!important;" data-toggle='.header' href='/about'>About</a>
+            <a class='Blog active' style= "text-decoration: none!important;" data-toggle='.header' href='/blogs'>Blogs</a>
+            <a class='jobs' data-toggle='.header' href='about.html#hiring'  style="display: none;">Jobs<span class="jobs-count"></span></a>
          </div>
       </nav>
    </div>
 </div>
+<script type="text/javascript">
+   my_url = window.location.href;
+if(my_url.indexOf("skillds.com") != -1){
+    var base_url='http://www.skillds.com/';
+    var server_no = 1
+
+}
+else{
+    var base_url='http://127.0.0.1:8000/';
+    var server_no = 2
+}
+$('.home').attr('href',base_url)
+</script>
+

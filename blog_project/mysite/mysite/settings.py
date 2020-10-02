@@ -29,7 +29,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Check if sys is local/server
 
+if "ubuntu" in BASE_DIR:
+    SERVER_NO = 1
+    BASE_URL='http://www.skillds.com/'
+else:
+    SERVER_NO = 2
+    BASE_URL='http://127.0.0.1:8000/'
+    
 # Application definition
 
 INSTALLED_APPS = [
@@ -76,18 +84,27 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'skilldslive',
+#             'USER': 'skilldsuser',
+#             'PASSWORD': 'skilldsis1',
+#             'HOST': 'ec2-13-235-22-51.ap-south-1.compute.amazonaws.com',
+#             'PORT': '5432',
+#         },
+# }
+
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'skilldslive',
-            'USER': 'skilldsuser',
-            'PASSWORD': 'skilldsis1',
-            'HOST': 'ec2-13-235-22-51.ap-south-1.compute.amazonaws.com',
-            'PORT': '5432',
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'skilldslocal',
+        'USER': 'umang',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    },
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 

@@ -1,4 +1,5 @@
-	<div class="container "><div class="container-inner"><footer class="footer"><div class="footer-left"><a aria-label="Skillds" class="logo" href="#" style="color: black;font-size: 28px;font-weight: 600;">Skillds</a>
+{% include '../base_main_app.html' %}
+    <div class="container "><div class="container-inner"><footer class="footer"><div class="footer-left"><a aria-label="Skillds" class="logo" href="#" style="color: black;font-size: 28px;font-weight: 600;">Skillds</a>
 	<!--    <p>© Copyright 2020 Skillds<br> All rights reserved.</p>-->
 
 	</div><nav class="footer-right" style="flex:0">
@@ -20,4 +21,17 @@
                 <img alt="Instagram" src="../../static/images/instagram.svg">
             </a></div></div>
 </nav></footer></div></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+   my_url = window.location.href;
+if(my_url.indexOf("skillds.com") != -1){
+    var base_url='http://www.skillds.com/';
+    var server_no = 1
+
+}
+else{
+    var base_url='http://127.0.0.1:8000/';
+    var server_no = 2
+}
+$('.home').attr('href',base_url)
+</script>

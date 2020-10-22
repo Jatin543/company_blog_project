@@ -3,9 +3,10 @@
 <div class="container header-container" style="width:100%!important">
    <div class="container-inner">
       <nav class="header">
-         <a aria-label="Skillds" class="logo" href="#" style="text-decoration: none!important;color: black!important;font-size: 28px!important;font-weight: 600!important;">Skillds</a>      
+         <a aria-label="Skillds" class="logo" href="" data-toggle=".header" style="text-decoration: none!important;color: black!important;font-size: 28px!important;font-weight: 600!important;">Skillds</a>
          <a class="button light header-login" style="visibility:hidden;" href="../static/preview.Skillds.com/">Login</a>
-         <a class="button header-signup" href="/about" data-show="signup">Subscribe</a><button class="hamburger" data-toggle=".header"><span class="hamburger-inner"></span><span class="visually-hidden">Toggle menu</span></button>
+<!--         <a class="button header-signup"  data-show="signup" >Subscribe</a><button class="hamburger" data-toggle=".header"><span class="hamburger-inner"></span><span class="visually-hidden">Toggle menu</span></button>-->
+         <a class="button header-signup" href="/about" >Subscribe</a><button class="hamburger" data-toggle=".header"><span class="hamburger-inner"></span><span class="visually-hidden">Toggle menu</span></button>
          <div class="menu">
             <a class="home" style= "text-decoration: none!important;" data-toggle=".header" href="http://www.skillds.com">Home</a>
             <a class='about' style= "text-decoration: none!important;" data-toggle='.header' href='/about'>About</a>
@@ -27,5 +28,6 @@ else{
     var server_no = 2
 }
 $('.home').attr('href',base_url)
+$('.logo').attr('href',base_url)
 </script>
 

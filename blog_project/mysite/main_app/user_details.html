@@ -1,0 +1,181 @@
+<div class="modal text-left create-contact-modal" id="CreateAccountForm" role="dialog" aria-labelledby="myModalLabel34" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+         <section id="basic-form-layouts">
+            <div class="modal-header align-items-center">
+                <h3 class="modal-title" id="myModalLabel34">Add Customer Account</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="row match-height">
+               <div class="col-md-12">
+                 <div class="card form-card" style="margin-bottom:0px!important;">
+                   <!-- <div class="card-header" align="center">
+                     <h2 id="basic-layout-form"><b>Add Account</b></h2>
+                   </div> -->
+                   <div class="card-content collapse show">
+                     <div class="card-body">
+                        <form class="form account_form" method="POST">
+                           <div class="form-body">
+                              <fieldset>
+                                 <div class="row">
+                                    <!-- <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="firstName3">
+                                          Account Name:
+                                          <span class="danger">*</span>
+                                          </label>
+                                          <input type="text" class="form-control required" id="account_name" name="account_name" placeholder="Account Name">
+                                       </div>
+                                    </div> -->
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="lastName3">
+                                          Account Name :
+                                          <span class="danger">*</span>
+                                          </label>
+                                          <input type="text" class="form-control required" id="client_namee" name="client_namee" placeholder="Account Name" required>
+                                       </div>
+                                    </div>
+
+                                     <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="lastName3">
+                                          Customer Number :
+                                          <span class="danger"></span>
+                                          </label>
+                                          <input type="text" class="form-control" id="customer_number" name="customer_number" placeholder="Customer Number">
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                       <div class="">
+                                          <label for="lastName3">
+                                          Mobile Number :
+                                          <span class="danger"></span>
+                                          </label>
+                                          <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <select class=" form-control country_code" name="country_code" id= "country" >
+                                                    <option data-countryCode="" value="">- Country Code -</option>
+                                                    <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                  <input type="number" min="0" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" >
+                                                </div>
+                                              </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="lastName3">
+                                          Email Address :
+                                          <span class="danger"></span>
+                                          </label>
+                                          <input type="text" class="form-control" id="client_email" name="client_email" placeholder="Client's Email Address">
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                                 <div class="row">
+
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="location">
+                                          Select Country :
+                                          <span class="danger"></span>
+                                          </label>
+                                          <select class="country form-control" name="country" id ="country2" onchange='get_states()'>
+                                              <option selected="selected" value="">- Select Country -</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                     <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="lastName3">
+                                          State :
+                                          <span class="danger"></span>
+                                          </label>
+                                          <select class=" form-control state" name="state">
+                                             <option value="" selected="selected">- Select State -</option>
+                                          </select>
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                                 <div class="row">
+                                       <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="lastName3">
+                                          Website :
+                                          </label>
+                                          <input type="text" class="form-control" id="website" name="website" placeholder="Website">
+                                       </div>
+                                    </div>
+                                     <div class="col-md-6">
+                                        <div class="form-group">
+                                          <label for="location">
+                                          Category:
+                                          <span class="danger"></span>
+                                          </label>
+                                          <select class="form-control category" name="category" >
+                                              <option selected="selected" value="">- Select Category -</option>
+                                              <option value="system integrator">System Integrator</option>
+                                              <option value="consultant">Consultant</option>
+                                              <option value="end user">End User</option>
+                                              <option value="architect">Architect</option>
+                                              <option value="mep contractor">MEP Contractor</option>
+                                          </select>
+                                        </div>
+
+                                      </div>
+                                    <div class="col-md-6">
+                                       <div class="form-group">
+                                          <label for="firstName3">
+                                          Postal Address:
+                                          </label>
+                                          <textarea name="postal_address" id="postal_address" rows="4" class="form-control"></textarea>
+                                       </div>
+                                    </div>
+
+                                  </div>
+
+                                  <!--<div class="row">
+
+                                  </div>-->
+
+
+                              </fieldset>
+                           </div>
+                           <hr/>
+                           <div class="text-right form-cta-btn">
+                              <button type="submit" class="btn btn-primary" name="create_account" id="create_new_acc">
+                                 Create Account
+                              </button>
+                           </div>
+                        </form>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+            </div>
+         </section>
+      </div>
+    </div>
+
+   </div>
+</div>

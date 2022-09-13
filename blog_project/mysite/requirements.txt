@@ -39,7 +39,7 @@ elasticsearch-dsl==5.2.0
 enum-compat==0.0.3
 enum34==1.1.6
 eventlet==0.25.2
-flower==0.9.3
+flower==1.2.0
 forex-python==1.5
 future==0.18.2
 futures==3.1.1

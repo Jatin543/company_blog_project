@@ -94,7 +94,7 @@ pdfrw==0.4
 pika==1.1.0
 Pillow==5.2.0
 pluggy==0.7.1
-protobuf==3.10.0
+protobuf==3.18.3
 psycopg2==2.7.5
 py==1.5.4
 pyasn1==0.4.5
